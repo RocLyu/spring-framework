@@ -3,8 +3,31 @@ plugins {
 }
 
 repositories {
+	mavenLocal()
+	maven {
+		url 'https://maven.aliyun.com/repository/central'
+	}
+	maven {
+		url 'https://maven.aliyun.com/repository/jcenter'
+	}
+	maven {
+		url 'https://maven.aliyun.com/repository/google'
+	}
+	maven {
+		url 'https://maven.aliyun.com/repository/gradle-plugin'
+	}
+	maven {
+		url "https://repo.spring.io/release"
+	}
+	maven {
+		url 'https://repo.spring.io/libs-release/'
+	}
+	maven {
+		url 'https://repo.spring.io/plugins-release'
+	}
 	mavenCentral()
 	gradlePluginPortal()
+
 }
 
 ext {
